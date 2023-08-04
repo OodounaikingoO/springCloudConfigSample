@@ -1,0 +1,17 @@
+# application.yml
+spring:
+  profiles:
+    active: dev
+---
+spring:
+  profiles: dev
+server:
+  port: 8080
+message: Hello from dev profile
+---
+spring:
+  profiles: prod
+server:
+  port: 8081
+message: Hello from prod profile
+
